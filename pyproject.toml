@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unitcircle"
+version = "0.1.0"
+description = "单位圆转盘：角度一键生成 A4 可打印三角函数转盘、指针与练习卡"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["unit-circle", "trigonometry", "math", "teacher", "print", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+unitcircle = "unitcircle.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/unitcircle"
+Source = "https://github.com/eastyou/unitcircle"
+
+[tool.setuptools]
+packages = ["unitcircle"]
